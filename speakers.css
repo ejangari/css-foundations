@@ -1,2 +1,0 @@
-/*When we have a common css for some HTML pages, instead of put the file base.css in each HTML page, I can import the base.css on each css*/
-@import "./base.css";

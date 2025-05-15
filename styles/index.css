@@ -11,3 +11,16 @@
 
 /*When we have a common css for some HTML pages, instead of put the file base.css in each HTML page, I can import the base.css on each css*/
 @import "./base.css";
+
+.main {
+  padding: 150px;
+}
+
+.main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.main__sub-heading {
+  font-size: 40px;
+}

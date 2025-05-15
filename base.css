@@ -9,17 +9,24 @@
   --color-button-secondary-bg: var(--color-primary);
   --color-button-secondary-text: var(--color-text-on-primary);
 
-
   --font-family: "Inter", sans-serif;
 }
 
 body {
-  background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
   font-family: var(--font-family);
 }
 
-p{
+.body--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
+}
+
+p {
   margin: 0;
 }
 
@@ -28,47 +35,47 @@ a {
   text-decoration: none;
 }
 
-.header{
+.header {
   display: grid;
   align-items: center;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 3fr 34px;
   grid-template-areas: "logo nav shopping-cart";
   padding: 0 60px; /* top/button right/left */
-
 }
 
-.header__link{ /* header >a{ */
+.header__link {
+  /* header >a{ */
   font-size: 40px;
   font-weight: bold;
 }
 
-header img{
+header img {
   grid-area: shopping-cart;
 }
 
-.nav{
+.nav {
   display: inline-block;
   justify-self: end;
 }
 
-.nav__list{    /* nav > ul{ */
+.nav__list {
+  /* nav > ul{ */
   list-style: none;
   display: flex;
-  
 }
 
-.nav__list-item{   /*nav > ul li{ */
+.nav__list-item {
+  /*nav > ul li{ */
   margin-right: 36px;
   /* margin: 0 36px 0 0;  top right botton left 
     margin: 0 36px 0;     top/bottm right left
     margin: 36px;         top/right/bottm/left  
   */
   font-size: 20px;
-
 }
 
-.button{
+.button {
   font-size: 32px;
   padding: 0 64px; /*top 0 right 64px buttom 0 left 64px */
   height: 100px;
@@ -79,29 +86,29 @@ header img{
 }
 
 .button:hover,
-.button:focus{
+.button:focus {
   outline: 2px solid var(--color-text-on-primary);
 }
 
-.button--primary{
+.button--primary {
   background-color: var(--color-button-primary-bg);
   color: var(--color-button-primary-text);
 }
 
-.button--secondary{
+.button--secondary {
   background-color: var(--color-button-secondary-bg);
   color: var(--color-button-secondary-text);
 }
 
-.button-container{
+.button-container {
   display: flex;
   margin-top: 100px;
 }
 
-.button:not(button:last-of-type){
+.button:not(button:last-of-type) {
   margin-inline-end: 20px;
 }
 
-.button__icon{
+.button__icon {
   vertical-align: middle;
 }
